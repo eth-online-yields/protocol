@@ -2,7 +2,7 @@
 
 ## Info
 
-Pipelite creates pipes between simmilar Liquidity Pools, enabling a provider provide liquidity where it is mostly needed, maximizing their potential collected fees. 
+Pipelite creates pipes between simmilar LPs, enabling providers to use their liquidity where it is mostly needed, maximizing their potential collected fees. 
 
 ## Install
 
