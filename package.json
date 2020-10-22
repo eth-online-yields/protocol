@@ -3,8 +3,9 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "start": "ganache-cli --fork https://mainnet.infura.io/v3/507147bda00d46eba3ae09c0cb0b41d2 --mnemonic 'brand insane federal bargain nice pilot recall zero disagree action arrive hint' &",
+    "plumber": "npx buidler run --network development scripts/plumber.js",
     "build": "npm run compile && npx buidler typechain",
     "compile": "npx buidler compile",
     "test": "npx buidler test",
@@ -35,7 +36,10 @@
     "ts-generator": "0.0.8",
     "ts-node": "^9.0.0",
     "typechain": "^2.0.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.2.0",
+    "graphql-tag": "^2.11.0"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.2.0",
