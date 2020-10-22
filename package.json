@@ -1,0 +1,47 @@
+{
+  "name": "pipelite",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "start": "ganache-cli --fork https://mainnet.infura.io/v3/507147bda00d46eba3ae09c0cb0b41d2 --mnemonic 'brand insane federal bargain nice pilot recall zero disagree action arrive hint' &",
+    "build": "npm run compile && npx buidler typechain",
+    "compile": "npx buidler compile",
+    "test": "npx buidler test",
+    "deploy": "npm run build  & npx buidler run --network development scripts/deploy.ts",
+    "coverage": "npm run build && npx buidler coverage --temp artifacts --network coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhlsthrm/solidity-ts-dev-stack-example.git"
+  },
+  "author": "buendiadas",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.7",
+    "@nomiclabs/buidler-ethers": "^2.0.0",
+    "@nomiclabs/buidler-etherscan": "^2.1.0",
+    "@nomiclabs/buidler-waffle": "^2.1.0",
+    "@typechain/ethers-v5": "^1.0.0",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.11.2",
+    "buidler-gas-reporter": "^0.1.3",
+    "buidler-typechain": "0.2.1",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.1.1",
+    "ethers": "^5.0.15",
+    "solidity-coverage": "^0.7.10",
+    "ts-generator": "0.0.8",
+    "ts-node": "^9.0.0",
+    "typechain": "^2.0.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "i": "^0.3.6",
+    "npm": "^6.14.8"
+  }
+}
